@@ -1,0 +1,25 @@
+#div_home{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#handler{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    text-align: center;
+    transform: translate(50%, 30%);
+}
+
+#main_label{
+    font-size: 50px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+            font-family: 'Poiret One', cursive;
+}
