@@ -13,7 +13,6 @@
 }
 
 #div_under_doc{
-    border: solid 1px black;
     width: 80%;
     height: 100%;
     margin-left: auto;
@@ -21,6 +20,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     opacity: 0;
+    border: solid 1px black;
 }
 
 #div_selection{
@@ -45,8 +45,35 @@
 
 .under_tbl_selection{
     font-size: 15px;
-    font-family: Arial;
-    color: darkgray;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
     width: 80%;
     margin-left: auto;
+}
+
+.div_under_comp{
+    width: 75%;
+    float: right;
+    height: 100%;
+}
+
+.label_u_comp{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+
+.links_u{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.links_p{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
