@@ -1,0 +1,10 @@
+#div_download{
+    opacity: 0;
+}
+
+#label_docu{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 50vh;
+}

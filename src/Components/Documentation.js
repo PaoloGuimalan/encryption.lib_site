@@ -8,12 +8,14 @@ function Documentation() {
             animate={{
                 top: "0%",
                 transition:{
+                    delay: 0,
                     duration: 1
                 } 
             }}
             exit={{
                 top: "100%",
                 transition:{
+                    delay: 0,
                     duration: 1
                 } 
             }}

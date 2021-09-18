@@ -4,6 +4,31 @@ html, body{
   margin: 0;
 }
 
+ul{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+}
+
+#label_header_title{
+  color: white;
+  font-size: 30px;
+  font-family: 'Poiret One', cursive;
+  margin: 10px;
+}
+
+#li_label{
+  width: 75%;
+}
+
+#li_tbl{
+  width: 25%;
+}
+
 .App{
   width: 100%;
   height: 100%;
@@ -11,7 +36,7 @@ html, body{
 
 #header{
   width: 100%;
-  height: 65px;
+  height: auto;
   color: black;
   background-color: transparent;
   position: absolute;
@@ -20,10 +45,9 @@ html, body{
 
 #tbl_header{
   text-align: center;
-  position: absolute;
-  right: 0;
   width: 300px;
   height: 100%;
+  margin-left: auto;
   margin-right: 50px;
 }
 
