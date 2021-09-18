@@ -23,10 +23,12 @@ ul{
 
 #li_label{
   width: 75%;
+  border: solid 0px white;
 }
 
 #li_tbl{
   width: 25%;
+  border: solid 0px white;
 }
 
 .App{
