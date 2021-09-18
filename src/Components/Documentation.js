@@ -15,6 +15,46 @@ function Documentation() {
         );
     }
 
+    const Enc = () => {
+        return(
+            <div className='div_under_comp'>
+                <p className='label_u_comp'>encrypt()</p>
+            </div>
+        );
+    }
+
+    const Dec = () => {
+        return(
+            <div className='div_under_comp'>
+                <p className='label_u_comp'>decrypt()</p>
+            </div>
+        );
+    }
+
+    const Val_param = () => {
+        return(
+            <div className='div_under_comp'>
+                <p className='label_u_comp'>Value Parameter</p>
+            </div>
+        );
+    }
+
+    const Count_param = () => {
+        return(
+            <div className='div_under_comp'>
+                <p className='label_u_comp'>Count Parameter</p>
+            </div>
+        );
+    }
+
+    const Err = () => {
+        return(
+            <div className='div_under_comp'>
+                <p className='label_u_comp'>Error Codes</p>
+            </div>
+        );
+    }
+
 
     return (
         <motion.div id='div_docu'
@@ -90,6 +130,11 @@ function Documentation() {
                         <Redirect to='/documentation/ab_enclib'/>
                     </Route>
                     <Route path='/documentation/ab_enclib' component={About_div}/>
+                    <Route path='/documentation/ab_encrypt' component={Enc}/>
+                    <Route path='/documentation/ab_decrypt' component={Dec}/>
+                    <Route path='/documentation/ab_valparam' component={Val_param}/>
+                    <Route path='/documentation/ab_countparam' component={Count_param}/>
+                    <Route path='/documentation/ab_err' component={Err}/>
                 </Switch>
             </motion.div>
         </motion.div>
