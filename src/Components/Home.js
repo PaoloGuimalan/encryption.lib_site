@@ -8,21 +8,6 @@ import { useLocation } from "react-router-dom";
 function Home() {
     return (
         <motion.div id='div_home'
-            initial={{marginTop: "-100%"}}
-            animate={{
-                marginTop: "0%",
-                transition:{
-                    delay: 0,
-                    duration: 1.5
-                }
-            }}
-            exit={{
-                marginTop: "-100%",
-                transition:{
-                    delay: 0,
-                    duration: 1
-                }
-            }}
         >
             <ParticlesHome />
             <div id='handler'>

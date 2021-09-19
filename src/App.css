@@ -2,6 +2,7 @@ html, body{
   width: 100%;
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 ul{
@@ -41,7 +42,7 @@ ul{
   height: auto;
   color: black;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 
@@ -65,4 +66,5 @@ ul{
        -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; 
+            cursor: pointer;
 }

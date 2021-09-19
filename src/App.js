@@ -39,13 +39,13 @@ function App() {
               <tbody>
                 <tr>
                   <td>
-                    <Link to='/' className='links' onClick={() => {setTimeout(function(){setambient(false)}, 2000)}}>Home</Link>
+                    <p className='links' onClick={() => {setTimeout(function(){setambient(false)}, 500); window.scrollTo(0, 0)}}>Home</p>
                   </td>
                   <td>
-                    <Link to='/documentation' className='links' onClick={() => {setambient(true)}}>Documentation</Link>
+                    <p className='links' onClick={() => {setambient(true); window.scrollTo(0, 700)}}>Documentation</p>
                   </td>
                   <td>
-                    <Link to='/download' className='links' onClick={() => {setambient(true)}}>Download</Link>
+                    <p className='links' onClick={() => {setambient(true)}}>Download</p>
                   </td>
                 </tr>
               </tbody>
@@ -53,16 +53,9 @@ function App() {
           </li>
         </ul>
       </motion.header>
-      <AnimatePresence exitBeforeEnter>
-      <Switch location={location} key={location.pathname}>
-        <Route exact path="/">
-            <Redirect to={`/home`} />
-        </Route>
-        <Route path={`/home`} component={Home}/>
-        <Route path='/documentation' component={Documentation}/>
-        <Route path='/download' component={Download}/>
-      </Switch>
-      </AnimatePresence>
+      <Home />
+      <Documentation />
+      <Download />
     </div>
   );
 }
