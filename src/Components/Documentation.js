@@ -59,6 +59,16 @@ function Documentation() {
     return (
         <motion.div id='div_docu'
         >
+            <p id='main_label_undoc'>What is encryption.lib?</p>
+            <p className='parags'>
+                <b>encryption.lib</b> is a JavaScript Library made for encrypting and decrypting data in your project.
+                 This is developed to provide some additional security and privacy feature in your on going projects. This can be used in
+                  sending encrypted data from client to server sides to prevent hackers of reading the data you are processing.
+                  </p>
+
+                  <p className='parags' id='end'>This Library can also be used in any Web based projects. It can be used both in Client and Server side of your project.
+                   encryption.lib has levels of encryption to prevent the encrypted data of being decrypted immediately.
+                </p>
             <p id='main_label_undoc'>Documentation</p>
             <motion.div
             id='div_under_doc'>

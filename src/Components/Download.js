@@ -5,14 +5,8 @@ import {motion} from 'framer-motion';
 function Download() {
     return (
         <motion.div id='div_download'
-            animate={{
-                opacity: 1
-            }}
-            exit={{
-                opacity: 0
-            }}
         >
-            <p id='label_docu'>Hello Download</p>
+            <p id='label_down'>Hello Download</p>
         </motion.div>
     )
 }

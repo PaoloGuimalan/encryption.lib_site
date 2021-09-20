@@ -44,6 +44,7 @@ ul{
   background-color: transparent;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 #tbl_header{
