@@ -2,7 +2,7 @@
     width: 100%;
     z-index: -1;
     margin-top: 150px;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
 
 #main_label_undoc{
@@ -10,6 +10,7 @@
     font-size: 35px;
     font-family: 'Poiret One', cursive;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
 }
 
 .parags{
@@ -35,7 +36,7 @@
 
 #div_under_doc{
     width: 80%;
-    height: auto;
+    height: 100%;
     margin-top: 10px;
     margin-bottom: 100px;
     margin-left: auto;
@@ -45,9 +46,8 @@
 }
 
 #div_selection{
-    width: 35%;
+    width: 100%;
     height: 100%;
-    padding-bottom: 100px;
     background-color: black;
     color: white;
 }
@@ -73,15 +73,14 @@
 }
 
 .div_under_comp{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     height: 100%;
-    background-color: burlywood;
+    /*background-color: burlywood;*/
 }
 
 #tbl_whole{
-    background-color: brown;
+    /*background-color: brown;*/
+    height: 100%;
     width: 100%;
 }
 
@@ -89,6 +88,7 @@
     text-align: center;
     color: black;
     font-size: 25px;
+    margin: 0;
     font-weight: bold;
     font-family: 'Poiret One', cursive;
     font-family: 'Raleway', sans-serif;

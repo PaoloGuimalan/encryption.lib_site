@@ -11,6 +11,31 @@ function Documentation() {
         return(
             <div className='div_under_comp'>
                 <p className='label_u_comp'>About encryption.lib</p>
+                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book it has?
+                </p>
+                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book it has?
+                </p>
+                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book it has?
+                </p>
+                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book it has?
+                </p>
+                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book it has?
+                </p>
             </div>
         );
     }
@@ -69,13 +94,13 @@ function Documentation() {
                   <p className='parags' id='end'>This Library can also be used in any Web based projects. It can be used both in Client and Server side of your project.
                    encryption.lib has levels of encryption to prevent the encrypted data of being decrypted immediately.
                 </p>
-            <p id='main_label_undoc'>Documentation</p>
+            <p id='main_label_undoc' style={{marginBottom: "100px"}}>Documentation</p>
             <motion.div
             id='div_under_doc'>
                     <table id='tbl_whole'>
                         <tbody>
                             <tr>
-                                <td>
+                                <td style={{width: "15%", background: "black"}}>
                                     <div id='div_selection'>
                                     <table id='tbl_selection'>
                                         <tbody>
