@@ -2,7 +2,7 @@
     width: 100%;
     z-index: -1;
     margin-top: 150px;
-    height: 1000px;
+    background-color: blueviolet;
 }
 
 #main_label_undoc{
@@ -38,26 +38,24 @@
     height: auto;
     margin-top: 10px;
     margin-bottom: 100px;
-    left: 10vw;
-    right: 10vw;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 1;
-    position: absolute;
     border: solid 1px black;
 }
 
 #div_selection{
-    width: 25%;
+    width: 35%;
     height: 100%;
     padding-bottom: 100px;
     background-color: black;
-    float: left;
     color: white;
 }
 
 #tbl_selection{
     width: 90%;
     margin-left: auto;
-    margin-top: 10%;
+    padding-top: 15px;
     font-family: 'Poiret One', cursive;
     font-family: 'Raleway', sans-serif;
 }
@@ -75,9 +73,16 @@
 }
 
 .div_under_comp{
-    width: 75%;
-    float: right;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
+    background-color: burlywood;
+}
+
+#tbl_whole{
+    background-color: brown;
+    width: 100%;
 }
 
 .label_u_comp{

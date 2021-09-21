@@ -72,67 +72,77 @@ function Documentation() {
             <p id='main_label_undoc'>Documentation</p>
             <motion.div
             id='div_under_doc'>
-                <div id='div_selection'>
-                    <table id='tbl_selection'>
+                    <table id='tbl_whole'>
                         <tbody>
                             <tr>
                                 <td>
-                                <Link to='/documentation/ab_enclib' className='links_p'><p className='p_selection'>About encryption.lib</p></Link>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p className='p_selection'>Attributes</p>
-                                    <table className='under_tbl_selection'>
+                                    <div id='div_selection'>
+                                    <table id='tbl_selection'>
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <Link to='/documentation/ab_encrypt' className='links_u'><p>encrypt()</p></Link>
-                                                    <Link to='/documentation/ab_decrypt' className='links_u'><p>decrypt()</p></Link>
+                                                <Link to='/documentation/ab_enclib' className='links_p'><p className='p_selection'>About encryption.lib</p></Link>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p className='p_selection'>Attributes</p>
+                                                    <table className='under_tbl_selection'>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <Link to='/documentation/ab_encrypt' className='links_u'><p>encrypt()</p></Link>
+                                                                    <Link to='/documentation/ab_decrypt' className='links_u'><p>decrypt()</p></Link>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p className='p_selection'>Parameters</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table className='under_tbl_selection'>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <Link to='/documentation/ab_valparam' className='links_u'><p>Value Parameter</p></Link>
+                                                                    <Link to='/documentation/ab_countparam' className='links_u'><p>Count Parameter</p></Link>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <Link to='/documentation/ab_err' className='links_p'><p className='p_selection'>Error Codes</p></Link>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    </div>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p className='p_selection'>Parameters</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table className='under_tbl_selection'>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <Link to='/documentation/ab_valparam' className='links_u'><p>Value Parameter</p></Link>
-                                                    <Link to='/documentation/ab_countparam' className='links_u'><p>Count Parameter</p></Link>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <Link to='/documentation/ab_err' className='links_p'><p className='p_selection'>Error Codes</p></Link>
+                                <td style={{width: "40%"}}>
+                                    <Switch location={location} key={location.pathname}>
+                                        <Route exact path='/documentation'>
+                                            <Redirect to='/documentation/ab_enclib'/>
+                                        </Route>
+                                        <Route path='/documentation/ab_enclib' component={About_div}/>
+                                        <Route path='/documentation/ab_encrypt' component={Enc}/>
+                                        <Route path='/documentation/ab_decrypt' component={Dec}/>
+                                        <Route path='/documentation/ab_valparam' component={Val_param}/>
+                                        <Route path='/documentation/ab_countparam' component={Count_param}/>
+                                        <Route path='/documentation/ab_err' component={Err}/>
+                                    </Switch>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <Switch location={location} key={location.pathname}>
-                    <Route exact path='/documentation'>
-                        <Redirect to='/documentation/ab_enclib'/>
-                    </Route>
-                    <Route path='/documentation/ab_enclib' component={About_div}/>
-                    <Route path='/documentation/ab_encrypt' component={Enc}/>
-                    <Route path='/documentation/ab_decrypt' component={Dec}/>
-                    <Route path='/documentation/ab_valparam' component={Val_param}/>
-                    <Route path='/documentation/ab_countparam' component={Count_param}/>
-                    <Route path='/documentation/ab_err' component={Err}/>
-                </Switch>
             </motion.div>
         </motion.div>
     )
