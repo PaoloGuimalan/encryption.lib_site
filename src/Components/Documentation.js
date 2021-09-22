@@ -106,7 +106,7 @@ function Documentation() {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                <Link to='/documentation/ab_enclib' className='links_p'><p className='p_selection'>About encryption.lib</p></Link>
+                                                <Link to='/' className='links_p'><p className='p_selection'>About encryption.lib</p></Link>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -154,10 +154,7 @@ function Documentation() {
                                 </td>
                                 <td style={{width: "40%"}}>
                                     <Switch location={location} key={location.pathname}>
-                                        <Route exact path='/documentation'>
-                                            <Redirect to='/documentation/ab_enclib'/>
-                                        </Route>
-                                        <Route path='/documentation/ab_enclib' component={About_div}/>
+                                        <Route path='/' component={About_div}/>
                                         <Route path='/documentation/ab_encrypt' component={Enc}/>
                                         <Route path='/documentation/ab_decrypt' component={Dec}/>
                                         <Route path='/documentation/ab_valparam' component={Val_param}/>
