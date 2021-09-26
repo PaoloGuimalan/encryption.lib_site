@@ -23,6 +23,17 @@
     margin-bottom: 0px;
 }
 
+.parags_end{
+    padding-bottom: 70px;
+    width: 70%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
 #end{
     margin-bottom: 100px;
 }
@@ -42,7 +53,8 @@
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
-    border: solid 1px black;
+    border: solid 0px black;
+    box-shadow: 10px 10px 20px 10px grey;
 }
 
 #div_selection{
@@ -85,6 +97,7 @@
 }
 
 .label_u_comp{
+    padding-top: 70px;
     text-align: center;
     color: black;
     font-size: 25px;

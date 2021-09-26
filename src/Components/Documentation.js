@@ -31,7 +31,7 @@ function Documentation() {
                 dummy text ever since the 1500s when an unknown printer took a galley of type 
                 and scrambled it to make a type specimen book it has?
                 </p>
-                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
+                <p className='parags_end'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
                 printing and typesetting industry Lorem Ipsum has been the industry's standard 
                 dummy text ever since the 1500s when an unknown printer took a galley of type 
                 and scrambled it to make a type specimen book it has?
@@ -154,7 +154,7 @@ function Documentation() {
                                 </td>
                                 <td style={{width: "40%"}}>
                                     <Switch location={location} key={location.pathname}>
-                                        <Route path='/' component={About_div}/>
+                                        <Route path='/' exact component={About_div}/>
                                         <Route path='/documentation/ab_encrypt' component={Enc}/>
                                         <Route path='/documentation/ab_decrypt' component={Dec}/>
                                         <Route path='/documentation/ab_valparam' component={Val_param}/>
