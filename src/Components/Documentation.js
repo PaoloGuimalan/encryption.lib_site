@@ -94,7 +94,7 @@ function Documentation() {
                   <p className='parags' id='end'>This Library can also be used in any Web based projects. It can be used both in Client and Server side of your project.
                    encryption.lib has levels of encryption to prevent the encrypted data of being decrypted immediately.
                 </p>
-            <p id='main_label_undoc' style={{marginBottom: "100px"}}>Documentation</p>
+            <p id='main_label_undoc'>Documentation</p>
             <motion.div
             id='div_under_doc'>
                     <table id='tbl_whole'>
