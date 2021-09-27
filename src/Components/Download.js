@@ -6,7 +6,11 @@ function Download() {
     return (
         <motion.div id='div_download'
         >
-            <p id='label_down'>Downloads</p>
+            <motion.p 
+                animate={{
+                    fontSize: window.innerWidth < 768 ? "20px" : "35px"
+                }}
+            id='label_down'>Downloads</motion.p>
             <motion.div
                 whileHover={{
                    scale: 1.04,
@@ -29,10 +33,9 @@ function Download() {
                                     <li id='li_v_third'>
                                         <motion.button
                                             whileHover={{
-                                                background: "white",
-                                                color: "black"
+                                                boxShadow: "0px 0px 10px white"
                                             }}
-                                         className='btns_v'>Download</motion.button>
+                                         className='btns_v'><a className='btns_v_a' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/coderslibrary-d2244.appspot.com/o/encryption.lib_versions%2Fencryption.lib.rar?alt=media&token=4dceb7cb-5f3c-4543-a96f-fdc1aafc4d64">Download</a></motion.button>
                                     </li>
                                 </ul>
                              </td>

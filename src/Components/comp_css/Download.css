@@ -6,7 +6,6 @@
 
 #label_down{
     text-align: center;
-    font-size: 35px;
     font-family: 'Poiret One', cursive;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 50px;
@@ -53,6 +52,12 @@
     border: solid 1px white;
     background-color: black;
     color:white;
+    border-radius: 100px;
+}
+
+.btns_v_a{
+    text-decoration: none;
+    color: white;
 }
 
 #li_v_third{
