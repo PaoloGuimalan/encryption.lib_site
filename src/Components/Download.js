@@ -7,6 +7,7 @@ function Download() {
         <motion.div id='div_download'
         >
             <p id='label_down'>Downloads</p>
+            <div id='versions'></div>
         </motion.div>
     )
 }
