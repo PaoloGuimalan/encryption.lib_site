@@ -100,7 +100,7 @@ function Documentation() {
                     <table id='tbl_whole'>
                         <tbody>
                             <tr>
-                                <td style={{width: "15%", background: "black"}}>
+                                <td style={{width: "15%", background: "black", paddingBottom: "500px"}}>
                                     <div id='div_selection'>
                                     <table id='tbl_selection'>
                                         <tbody>
