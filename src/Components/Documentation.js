@@ -66,8 +66,8 @@ function Documentation() {
                             <td>
                                 <p className='parags_ins'>
                                 Next Step is creating script functions inside your html file 
-                                and initialize <b>encrypt(the variable you want to decrypt, and how many levels of encryption) </b>
-                                 or/and <b>decrypt(the variable you want to decrypt, and how many levels of encryption)</b>.
+                                and initialize <b>encrypt(the variable you want to encrypt, and how many levels of encryption) </b>
+                                 or/and <b>decrypt(the variable you want to decrypt, and how many levels of decryption)</b>.
                                  <br />
                                  <br />
                                  <b>Note:</b> More instructions are in the Attributes Section.
