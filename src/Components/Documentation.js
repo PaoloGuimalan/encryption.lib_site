@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react';
 import './comp_css/Documentation.css';
 import {motion} from 'framer-motion';
 import {Link, Route, Switch, useLocation, Redirect} from 'react-router-dom';
@@ -7,34 +8,37 @@ function Documentation() {
 
     const location = useLocation();
 
+    const [err, seterr] = useState(0);
+
     const About_div = () => {
         return(
             <div className='div_under_comp'>
                 <p className='label_u_comp'>About encryption.lib</p>
-                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry Lorem Ipsum has been the industry's standard 
-                dummy text ever since the 1500s when an unknown printer took a galley of type 
-                and scrambled it to make a type specimen book it has?
+                <p className='parags'>
+                    <b>Version 0.0.1</b>
+                    <br />
+                    <br />
+                        This is version only consist of numerical encryption where characters are converted into Series of numbers
+                        where the result of the encrypted value can also be encrypted as well, maximum of 5 times. As it is being converted
+                         it becomes strongly secured but consumes higher space of data for because the more you encyrpt the encrypted 
+                         value it becomes more longer and longer.
                 </p>
-                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry Lorem Ipsum has been the industry's standard 
-                dummy text ever since the 1500s when an unknown printer took a galley of type 
-                and scrambled it to make a type specimen book it has?
+                <p className='parags'>
+                    <b>Version 0.0.2</b>
+                    <br />
+                    <br />
+                        Coming Soon!
                 </p>
-                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry Lorem Ipsum has been the industry's standard 
-                dummy text ever since the 1500s when an unknown printer took a galley of type 
-                and scrambled it to make a type specimen book it has?
-                </p>
-                <p className='parags'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry Lorem Ipsum has been the industry's standard 
-                dummy text ever since the 1500s when an unknown printer took a galley of type 
-                and scrambled it to make a type specimen book it has?
-                </p>
-                <p className='parags_end'>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the 
-                printing and typesetting industry Lorem Ipsum has been the industry's standard 
-                dummy text ever since the 1500s when an unknown printer took a galley of type 
-                and scrambled it to make a type specimen book it has?
+            </div>
+        );
+    }
+
+    const Directions = () => {
+        return(
+            <div className='div_under_comp'>
+                <p className='label_u_comp'>Instructions</p>
+                <p className='parags'>
+                    This applies in any version:
                 </p>
             </div>
         );
@@ -73,11 +77,41 @@ function Documentation() {
     }
 
     const Err = () => {
-        return(
-            <div className='div_under_comp'>
-                <p className='label_u_comp'>Error Codes</p>
-            </div>
-        );
+        if(err == 11){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E000x001</p>
+                </div>
+            );
+        }
+        else if(err == 12){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E000x002</p>
+                </div>
+            );
+        }
+        else if(err == 21){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E001x001</p>
+                </div>
+            );
+        }
+        else if(err == 22){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E001x002</p>
+                </div>
+            );
+        }
+        else{
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>Error Codes</p>
+                </div>
+            );
+        }
     }
 
 
@@ -119,6 +153,11 @@ function Documentation() {
                                             </tr>
                                             <tr>
                                                 <td>
+                                                <Link to='/drct' className='links_p'><p className='p_selection'>How to use encryption.lib</p></Link>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
                                                     <p className='p_selection'>Attributes</p>
                                                     <table className='under_tbl_selection'>
                                                         <tbody>
@@ -153,7 +192,23 @@ function Documentation() {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <Link to='/documentation/ab_err' className='links_p'><p className='p_selection'>Error Codes</p></Link>
+                                                    <p className='p_selection'>Error Codes</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table className='under_tbl_selection'>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(11)}}><p>E000x001</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(12)}}><p>E000x002</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(21)}}><p>E001x001</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(22)}}><p>E001x002</p></Link>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -163,6 +218,7 @@ function Documentation() {
                                 <td style={{width: "40%"}}>
                                     <Switch location={location} key={location.pathname}>
                                         <Route path='/' exact component={About_div}/>
+                                        <Route path='/drct' exact component={Directions}/>
                                         <Route path='/documentation/ab_encrypt' component={Enc}/>
                                         <Route path='/documentation/ab_decrypt' component={Dec}/>
                                         <Route path='/documentation/ab_valparam' component={Val_param}/>
