@@ -2,6 +2,13 @@ import React from 'react'
 import {useState} from 'react';
 import './comp_css/Documentation.css';
 import {motion} from 'framer-motion';
+import Cr_dec from './master_ins/create_dec.PNG';
+import Cr_enc from './master_ins/create_enc.PNG';
+import Cr_dec2 from './master_ins/create_dec2.PNG';
+import Cr_enc2 from './master_ins/create_enc2.PNG';
+import im_pro from './master_ins/import_process.PNG';
+import init_btns from './master_ins/init_btns.PNG';
+import res_ins from './master_ins/res_ins.PNG';
 import {Link, Route, Switch, useLocation, Redirect} from 'react-router-dom';
 
 function Documentation() {
@@ -40,6 +47,74 @@ function Documentation() {
                 <p className='parags'>
                     This applies in any version:
                 </p>
+                <br />
+                <table className='tbl_ins'>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>First step is by importing the library into your html file, the same as how 
+                                you normaly import your JavaScript files.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src={im_pro} className='img_ins'></img>
+                            </td>
+                        </tr>
+                        <tr className='tr_ins'>
+                            <td>
+                                <p className='parags_ins'>
+                                Next Step is creating script functions inside your html file 
+                                and initialize <b>encrypt(the variable you want to decrypt, and how many levels of encryption) </b>
+                                 or/and <b>decrypt(the variable you want to decrypt, and how many levels of encryption)</b>.
+                                 <br />
+                                 <br />
+                                 <b>Note:</b> More instructions are in the Attributes Section.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'><b>Encryption:</b></p>
+                                <img src={Cr_enc} className='img_ins'></img>
+                                <p className='parags_ins'>Or</p>
+                                <img src={Cr_enc2} className='img_ins'></img>
+                                <p className='parags_ins'><b>Decryption:</b></p>
+                                <img src={Cr_dec} className='img_ins'></img>
+                                <p className='parags_ins'>Or</p>
+                                <img src={Cr_dec2} className='img_ins'></img>
+                            </td>
+                        </tr>
+                        <tr className='tr_ins'>
+                            <td>
+                            <p className='parags_ins'>
+                                Last but Optional. Declare a function calling button to 
+                                return and print the encryption/decryption results on your 
+                                interface.
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src={init_btns} className='img_ins'></img>
+                            </td>
+                        </tr>
+                        <tr className='tr_ins'>
+                            <td>
+                            <p className='parags_ins'>
+                                Once you clicked the buttons, the value initialized will be 
+                                encrypted or decrypted.
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src={res_ins} className='img_ins'></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
@@ -91,6 +166,20 @@ function Documentation() {
                 </div>
             );
         }
+        else if(err == 13){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E000x003</p>
+                </div>
+            );
+        }
+        else if(err == 14){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E000x004</p>
+                </div>
+            );
+        }
         else if(err == 21){
             return(
                 <div className='div_under_comp'>
@@ -102,6 +191,20 @@ function Documentation() {
             return(
                 <div className='div_under_comp'>
                     <p className='label_u_comp'>E001x002</p>
+                </div>
+            );
+        }
+        else if(err == 23){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E001x003</p>
+                </div>
+            );
+        }
+        else if(err == 24){
+            return(
+                <div className='div_under_comp'>
+                    <p className='label_u_comp'>E001x004</p>
                 </div>
             );
         }
@@ -203,8 +306,12 @@ function Documentation() {
                                                                 <td>
                                                                     <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(11)}}><p>E000x001</p></Link>
                                                                     <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(12)}}><p>E000x002</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(13)}}><p>E000x003</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(14)}}><p>E000x004</p></Link>
                                                                     <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(21)}}><p>E001x001</p></Link>
                                                                     <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(22)}}><p>E001x002</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(23)}}><p>E001x003</p></Link>
+                                                                    <Link to='/documentation/ab_err' className='links_u' onClick={() => {seterr(24)}}><p>E001x004</p></Link>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
