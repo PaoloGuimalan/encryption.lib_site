@@ -9,6 +9,13 @@ import Cr_enc2 from './master_ins/create_enc2.PNG';
 import im_pro from './master_ins/import_process.PNG';
 import init_btns from './master_ins/init_btns.PNG';
 import res_ins from './master_ins/res_ins.PNG';
+import con from './master_ins/enc_demo/condition.PNG';
+import con_res from './master_ins/enc_demo/condition_res.PNG';
+import loops from './master_ins/enc_demo/loops.PNG';
+import loops_res from './master_ins/enc_demo/loop_res.PNG';
+import dec_con from './master_ins/enc_demo/dec_con.PNG';
+import dec_con_res from './master_ins/enc_demo/dec_con_res.PNG';
+import params from './master_ins/enc_demo/params.PNG';
 import {Link, Route, Switch, useLocation, Redirect} from 'react-router-dom';
 
 function Documentation() {
@@ -123,6 +130,67 @@ function Documentation() {
         return(
             <div className='div_under_comp'>
                 <p className='label_u_comp'>encrypt()</p>
+                <p className='parags'>
+                    The encrypt attribute consist of two Parameters - the Value Parameter and Count Parameter. 
+                    You can use encrypt in many different ways such as in Loops, Condition statements or even 
+                    in the simpliest type of variable declaration.
+                    <br />
+                    <br />
+                    These are the few examples of how you can use <b>encrypt()</b> attribute.
+                </p>
+                <br />
+                <table className='tbl_ins'>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    <b>Conditional Statement (ex. If else Statement)</b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    Code:
+                                </p>
+                                <img src={con} className='img_ins'></img>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    Result:
+                                </p>
+                                <img src={con_res} className='img_ins'></img>
+                                <br />
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    <b>Loops (ex. For Loops)</b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    Code:
+                                </p>
+                                <img src={loops} className='img_ins'></img>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    Result:
+                                </p>
+                                <img src={loops_res} className='img_ins'></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
@@ -131,6 +199,45 @@ function Documentation() {
         return(
             <div className='div_under_comp'>
                 <p className='label_u_comp'>decrypt()</p>
+                <p className='parags'>
+                    The decrypt attribute also similar to encrypt, it also has Value and Count Parameters, 
+                    but in this part you can use encrypt and decrypt to work together to perform conditional 
+                    statements, loops and other procedures you can think of. By using encrypt and decrypt you 
+                    can level up the security of your system from data intercepters on your API's. This does not 
+                    protect your data, in basic terms, hackers can most likely still fetch the data being sent to 
+                    the client and server sides but through encryption.lib the data will become unreadable in their 
+                    end.
+                    <br />
+                    <br />
+                    These are the few examples of how you can use <b>decrypt()</b> attribute.
+                </p>
+                <table className='tbl_ins'>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    <b>Conditional Statement (ex. If else Statement)</b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    Code:
+                                </p>
+                                <img src={dec_con} className='img_ins'></img>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='parags_ins'>
+                                    Result:
+                                </p>
+                                <img src={dec_con_res} className='img_ins'></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
@@ -139,6 +246,22 @@ function Documentation() {
         return(
             <div className='div_under_comp'>
                 <p className='label_u_comp'>Value Parameter</p>
+                <p className='parags'>
+                    Value Parameter is the one that holds the data to be encrypted or decrypted. 
+                    You can initialize different ways of filling up Value Parameter as long as the 
+                    value or variables are not null. The values can either be Integers, Strings or Boolean.
+                </p>
+                <br />
+                <br />
+                <table className='tbl_ins'>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src={params} className='img_ins'></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
@@ -147,6 +270,7 @@ function Documentation() {
         return(
             <div className='div_under_comp'>
                 <p className='label_u_comp'>Count Parameter</p>
+                <p className='parags'></p>
             </div>
         );
     }
